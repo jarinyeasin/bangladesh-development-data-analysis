@@ -79,7 +79,7 @@ Literacy is by far the most forecastable series here, a 1.43% MAPE reflects how 
 
 ### Regression & Correlation
 
-**Correlation matrix (Pearson, contemporaneous):** Level variables — GDP, GDP per capita, internet users, literacy, electricity access — are all pairwise correlated above 0.9, which mostly reflects a shared secular upward trend across three decades rather than a specific causal relationship between any pair. `GDP_growth_pct` (which removes the trend) correlates far more weakly with everything — at most 0.44 with unemployment and 0.31 with literacy — and this weaker, trend-adjusted correlation is the more informative one.
+**Correlation matrix (Pearson, contemporaneous):** Level variables — GDP, GDP per capita, internet users, literacy, electricity access are all pairwise correlated above 0.9, which mostly reflects a shared secular upward trend across three decades rather than a specific causal relationship between any pair. `GDP_growth_pct` (which removes the trend) correlates far more weakly with everything at most 0.44 with unemployment and 0.31 with literacy and this weaker, trend-adjusted correlation is the more informative one.
 
 **Does internet penetration predict GDP growth, with a lag?** Tested at 1, 2, and 3-year lags via separate univariate OLS models (n = 26 for each):
 
