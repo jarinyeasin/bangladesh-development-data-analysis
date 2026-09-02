@@ -77,7 +77,7 @@ Literacy is by far the most forecastable series here, a 1.43% MAPE reflects how 
 
 5-year forecasts (2026–2030): GDP per capita rises from roughly **$2,618 to $2,682**; unemployment holds essentially flat around **3.79%**; literacy climbs steadily to **~79.0%**. Internet penetration is projected to reach **~97.4% by 2030**. ETS extrapolates the strong recent growth trend linearly without any awareness that adoption curves saturate; a 5-year jump from ~54% (2024 actual) to near-total penetration should be read as a model limitation, not a forecast to plan around.
 
-### Regression & Correlation (`06_regression_analysis.py`)
+### Regression & Correlation
 
 **Correlation matrix (Pearson, contemporaneous):** Level variables — GDP, GDP per capita, internet users, literacy, electricity access — are all pairwise correlated above 0.9, which mostly reflects a shared secular upward trend across three decades rather than a specific causal relationship between any pair. `GDP_growth_pct` (which removes the trend) correlates far more weakly with everything — at most 0.44 with unemployment and 0.31 with literacy — and this weaker, trend-adjusted correlation is the more informative one.
 
@@ -113,7 +113,7 @@ Two independent tests, both run across the 34-year series:
 | 2023 | Unemployment | −2.40 |
 | 2024 | Internet users | +3.05 |
 
-**2020's unemployment change z-score: 1.85 — below threshold.**
+**2020's unemployment change z-score: 1.85, below threshold.**
 
 **Isolation Forest**, run jointly across all 7 indicators simultaneously (treating each year as a point in indicator-space, using year-over-year % change so the secular growth trend doesn't dominate): only **2016** is flagged as anomalous. **2020 ranks 6th of 11** scored years by anomaly score and is not flagged.
 
