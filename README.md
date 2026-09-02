@@ -214,7 +214,7 @@ bangladesh-development-data-analysis/
 │
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## How to Run
@@ -263,8 +263,6 @@ streamlit run 04_dashboard.py  # launch dashboard at localhost:8501
 pytest test_data.py -v
 
 ```
-
----
 
 ## Limitations
 
