@@ -72,13 +72,45 @@ st.markdown(f"""
         margin-bottom: 1.6rem;
         background-color: #0B1410;
         background-image:
-            linear-gradient(100deg, rgba(11,20,16,0.97) 32%, rgba(11,20,16,0.68) 100%),
+            linear-gradient(100deg, rgba(11,20,16,0.95) 0%, rgba(11,20,16,0.88) 100%),
             url('{FLAG_URL}');
-        background-size: cover, 55%;
-        background-position: center, left -50px center;
+        background-size: cover, cover;
+        background-position: center, center;
         background-repeat: no-repeat, no-repeat;
         border: 1px solid rgba(0,106,78,0.35);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
     }}
+.hero-text {{ flex: 1 1 380px; }}
+.hero-video {{
+    flex: 0 0 auto;
+    position: relative;
+    display: block;
+    width: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0,106,78,0.4);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}}
+.hero-video img {{ width: 100%; display: block; }}
+.hero-video::after {{
+    content: "▶";
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px; height: 56px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4px;
+}}
     .hero h1 {{
         font-size: 2.15rem;
         font-weight: 650;
@@ -106,14 +138,23 @@ st.markdown(f"""
 </style>
 
 <div class="hero">
-    <h1>Analysis of Bangladesh Development Indicators</h1>
-    <p class="sub">
-        Economic and social development data from the World Bank, explored,
-        forecast, and tested for statistical significance.
-    </p>
-    <div class="meta">
-        Data from <a href="https://data.worldbank.org/country/BD" target="_blank">World Bank Open Data</a>
+    <div class="hero-text">
+        <h1>Analysis of Bangladesh Development Indicators</h1>
+        <p class="sub">
+            Economic and social development data from the World Bank, explored,
+            forecast, and tested for statistical significance.
+        </p>
+        <div class="meta">
+            Data from <a href="https://data.worldbank.org/country/BD" target="_blank">World Bank Open Data</a>
+        </div>
     </div>
+    <a class="hero-video" href="https://youtu.be/rJ2z3GSdVak" target="_blank">
+        <img src="https://img.youtube.com/vi/rJ2z3GSdVak/maxresdefault.jpg" alt="Watch the project walkthrough on YouTube">
+    <div style="color:#9AA3C7; font-size:0.72rem; text-align:center; margin-top:6px;
+                          text-transform:uppercase; letter-spacing:0.05em;">
+                ▶ Watch: Project Walkthrough
+              </div>
+    </a>
 </div>
 """, unsafe_allow_html=True)
 
