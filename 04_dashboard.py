@@ -150,10 +150,10 @@ st.markdown(f"""
     </div>
     <a class="hero-video" href="https://youtu.be/rJ2z3GSdVak" target="_blank">
         <img src="https://img.youtube.com/vi/rJ2z3GSdVak/maxresdefault.jpg" alt="Watch the project walkthrough on YouTube">
-    <div style="color:#9AA3C7; font-size:0.72rem; text-align:center; margin-top:6px;
-                          text-transform:uppercase; letter-spacing:0.05em;">
-                ▶ Watch: Project Walkthrough
-              </div>
+        <div style="color:#9AA3C7; font-size:0.72rem; text-align:center; margin-top:6px;
+                            text-transform:uppercase; letter-spacing:0.05em;">
+                    ▶ Watch: Project Walkthrough
+        </div>
     </a>
 </div>
 """, unsafe_allow_html=True)
